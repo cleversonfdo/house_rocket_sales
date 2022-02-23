@@ -146,7 +146,7 @@ For the next iterations of the project cycle:
 
 
 
-**Appendix:**
+# Appendix:
 
 Link to the page of Dashboard:
 
