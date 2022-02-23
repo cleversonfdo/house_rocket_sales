@@ -44,20 +44,8 @@ The columns description of the available data is given below:
 
 For analyze the project we assume the following conditions:
 - The median price of the houses is $450.000.
-- All the houses are in good condition for buy and use.
 - The houses with waterview are more expensive.
 - The houses were builded among the years 1900 and 2015.
-- Houses with date above 2014-01-01 will be nominated as new_house, and in other cases old_house
-- Houses with one bedroom will be nominated as studio, two bedrooms as apartment and more than two bedrooms as house
-- Will be assumed the next condition type categorization:
-    - Bad: if the condition column value is lower or equals 2
-    - Regular: if the condition column value is equal 3 or 4 
-    - Good: if the condition column value is equal a 5 
-- Will be assumed the next level categorization:
-    - Level 0: price between R$0.00 and R$321.950
-    - Level 1: price between R$321.950  and R$450.000
-    - Level 2: price between R$450.000 and R$645.000
-    - Level 3: price above R$645.000
 - The sazonaltity for sale will defined based on the date provided by the dataset
 
 # 3. Solution Strategy
