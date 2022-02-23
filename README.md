@@ -69,7 +69,7 @@ It will be delivered the following tools:
 - Visualization tools to answer all the hypothesis.
 - A table with purchase recommendation.
 - A table wit sells recommendation with profits of 10% and 30%.
--
+
 Note: Link in the Appendix
 
 ## 3.2 Tools
