@@ -8,8 +8,6 @@ This project is based on a dataset of houses sales in King Couny, US. The data i
 
 https://www.kaggle.com/harlfoxem/housesalesprediction
 
-For this project, it was used only 5000 rows of the raw dataset.
-
 # 1. Business Problem
 
 The House Rocket Co business is buy and sell houses. Basically the company buy houses with prices lower than the market price and sell it for a higher price to get profits from each operation. The problem is the portfólio size, that is too big to deal with it manualy, and because of that the company looses good business oportunities. To identifie a good operation the company need to deal with various attributes like region, sazonality, house age, the number of bathrooms, bedrooms, etc. So with a lot of information a data science solution is nedded to analyse all the attributes and find the best negotiation.
@@ -53,13 +51,14 @@ For analyze the project we assume the following conditions:
 - Houses with one bedroom will be nominated as studio, two bedrooms as apartment and more than two bedrooms as house
 - Will be assumed the next condition type categorization:
     - Bad: if the condition column value is lower or equals 2
-    - Regular: if the condition column value is equal 3 or 4      
-    - Good: if the condition column value is equal a 5         
+    - Regular: if the condition column value is equal 3 or 4 
+    - Good: if the condition column value is equal a 5 
 - Will be assumed the next level categorization:
     - Level 0: price between R$0.00 and R$321.950
     - Level 1: price between R$321.950  and R$450.000
     - Level 2: price between R$450.000 and R$645.000
     - Level 3: price above R$645.000
+- The sazonaltity for sale will defined based on the date provided by the dataset
 
 # 3. Solution Strategy
 
@@ -90,14 +89,14 @@ Git and Github
 - Get the data on kaggle
 - Group the houses by region (zipcode)
 - Find the price median by region
-- Suggest the houses with prices below median and are in good condition (>3)
+- Suggest the houses wich are in good condition (>3) with the corresponding profit
 
 ### 3.3.2 Once the house was purchased, what is the best moment to sell it and for what price?
 
 - Group the houses bay region and by sazonality (summer, inter)
-- Find the median price by region and sazonality
-- If the house is sold in the sazonality, the sell price can be 30% above the purchase price
-- If the house is sold out of the sazonality, the sell price can be 10% above the purchase price
+- Find the median price by region (zipcode)
+- If price is above the median of that region, the sell price can be 10% above the purchase price
+- If price is below the median of that region, the sell price can be 30% above the purchase price
 
 # 4. Data Insights
 
@@ -123,17 +122,17 @@ Top three Hyphotesis:
 
 # 5. Business Results
 
-It was considered thw scenarios of selling:
+It was considered two scenarios of selling:
 
-- Selling the house in the season recomendation, with a profit of 30%
-- Selling the house out of the season recomendation, with a profit of 10%
+- Selling the houses with a profit of 30%
+- Selling the houses with a profit of 10%
 
-The next table ilustrate the amount of investiment by ourchasing all the houses recomended, and the forecast of revenu by selling them.
+The next table ilustrate the amount of investiment by purchasing all the houses recomended, and the forecast of revenue by selling them.
 
-|Amount of Investment     | R$ 948.122.647       |   
+|Amount of Investment     | $ 11.523.953.411       |
 |:-----------------------:|:--------------------:|
-|Max Profit In Season     |  R$ 284.436.794      |
-|Max Profit Out of Season |  R$ 94.812.264       |  
+|Max Revenues             | $ 13.489.025.920,1      |
+|Max Profit               | $ 1.965.072.509,1       |
 
 # 6. Conclusion
 
@@ -151,4 +150,4 @@ For the next iterations of the project cycle:
 
 Link to the page of Dashboard:
 
- <a href="https://house-sales-hr.herokuapp.com" target="_blank"> Dashboard Page </a>
+ <a href="https://house-rocket-sales.herokuapp.com" target="_blank"> Dashboard Page </a>
