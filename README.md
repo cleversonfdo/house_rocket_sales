@@ -4,7 +4,7 @@
 
 ## Disclaimer
 
-This project is based on a dataset of houses sales in King Couny, US. The data is available in kaggle site. The values on the dataset are real, but the scenario used is fictitious. The source of the dataset can be viewed on the link below:
+This project is based on a dataset of houses sales in King County, US. The data is available in kaggle site. The values on the dataset are real, but the scenario used is fictitious. The source of the dataset can be viewed on the link below:
 
 https://www.kaggle.com/harlfoxem/housesalesprediction
 
